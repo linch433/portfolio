@@ -9,7 +9,7 @@ const Layout = ({ children }: Layout_T) => {
   return (
     <div>
       <Header />
-      {children}
+      <div>{children}</div>
     </div>
   );
 };

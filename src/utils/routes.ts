@@ -1,4 +1,4 @@
-import { IRoutes } from '../types/routes.ts';
+import { IRoutes } from '@/types/routes.ts';
 
 export const navRoutes: IRoutes[] = [
   {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { navRoutes } from '../../utils/routes.ts';
+import { navRoutes } from '@/utils/routes.ts';
 
 const Header = () => {
   return (

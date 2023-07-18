@@ -1,10 +1,11 @@
 import Layout from '../layout/Layout.tsx';
-import { Outlet } from 'react-router-dom';
-import AboutPage from '../../pages/About/AboutPage.tsx';
-import ProjectsPage from '../../pages/Projects/ProjectsPage.tsx';
-import ExperiencePage from '../../pages/Experience/ExperiencePage.tsx';
+import { createBrowserRouter, Outlet } from 'react-router-dom';
+import AboutPage from '@/pages/About/AboutPage.tsx';
+import ProjectsPage from '@/pages/Projects/ProjectsPage.tsx';
+import ExperiencePage from '@/pages/Experience/ExperiencePage.tsx';
+import ErrorPage from '@/pages/Error/ErrorPage.tsx';
 
-const routes = [
+const routes = createBrowserRouter([
   {
     path: '/',
     element: (
@@ -12,6 +13,7 @@ const routes = [
         <Outlet />
       </Layout>
     ),
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '',
@@ -27,6 +29,6 @@ const routes = [
       },
     ],
   },
-];
+]);
 
 export default routes;
