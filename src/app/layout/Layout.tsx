@@ -1,5 +1,7 @@
 import Header from './Header.tsx';
 import React from 'react';
+import Divider from '@/components/Divider.tsx';
+import { clsx } from 'clsx';
 
 type Layout_T = {
   children: React.ReactNode;
@@ -7,9 +9,18 @@ type Layout_T = {
 
 const Layout = ({ children }: Layout_T) => {
   return (
-    <div>
+    <div className="font-poppins text-xl">
       <Header />
-      <div>{children}</div>
+      <Divider />
+      <div
+        className={clsx(
+          'h-[calc(100vh-9.55rem)]',
+          'bg-primary-navy text-primary-light-grey',
+          'flex justify-center',
+        )}
+      >
+        <div className="w-full md:w-[50%]">{children}</div>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,7 @@
+import MotionContainer from '@/components/MotionContainer.tsx';
+
 const AboutPage = () => {
-  return <div>AboutPage</div>;
+  return <MotionContainer>AboutPage</MotionContainer>;
 };
 
 export default AboutPage;

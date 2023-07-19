@@ -1,5 +1,7 @@
+import MotionContainer from '@/components/MotionContainer.tsx';
+
 const ExperiencePage = () => {
-  return <div>ExperiencePage</div>;
+  return <MotionContainer>ExperiencePage</MotionContainer>;
 };
 
 export default ExperiencePage;

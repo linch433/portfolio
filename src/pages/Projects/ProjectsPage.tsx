@@ -1,5 +1,7 @@
+import MotionContainer from '@/components/MotionContainer.tsx';
+
 const ProjectsPage = () => {
-  return <div>ProjectPage</div>;
+  return <MotionContainer>ProjectPage</MotionContainer>;
 };
 
 export default ProjectsPage;
