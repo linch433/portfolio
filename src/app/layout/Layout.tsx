@@ -14,12 +14,14 @@ const Layout = ({ children }: Layout_T) => {
       <Divider />
       <div
         className={clsx(
-          'h-[calc(100vh-9.55rem)]',
+          'min-h-[calc(100vh-9.55rem)]',
           'bg-primary-navy text-primary-light-grey',
           'flex justify-center',
         )}
       >
-        <div className="w-full md:w-[50%]">{children}</div>
+        <div className="w-full flex md:w-[60%] lg:w-[45%] mb-10">
+          {children}
+        </div>
       </div>
     </div>
   );

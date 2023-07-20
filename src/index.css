@@ -6,3 +6,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Always change if main color on tailwind.config changed */
+body {
+    background-color: #18122B;
+}
+
