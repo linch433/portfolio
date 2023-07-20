@@ -8,7 +8,7 @@ type MockAboutPageData_T = {
 export const aboutMockData: MockAboutPageData_T = {
   greetingMessage: "Hey there, I'm Volodymyr!",
   headingMessage:
-    'Welcome to my realm in the digital universe! As a web developer, my passion knows no bounds when it comes to all things web-related. It all began during my college days, where I discovered the enchanting art and science of building websites. The experience was nothing short of magical, and since then, my love for web development has only grown stronger. Join me on this mesmerizing journey through the ever-evolving world of web!',
+    'Welcome to my realm in the digital universe! As a web developer, my passion knows no bounds when it comes to all things web-related. It all began during my school days, where I discovered the enchanting art and science of building websites. The experience was nothing short of magical, and since then, my love for web development has only grown stronger. Join me on this mesmerizing journey through the ever-evolving world of web!',
   graduation:
     "I graduated from Uzhhorod National University with a Bachelor's degree in Computer Engineering. During my time there, I had the opportunity to explore programming languages, front-end and back-end technologies, and everything that makes the web fascinating. This experience ignited my passion for web development, and I've been deeply involved in it ever since.",
   skills:
