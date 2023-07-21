@@ -9,7 +9,7 @@ const Header = () => {
       className={clsx(
         'flex flex-row justify-center',
         'gap-6 pt-10',
-        'bg-primary-navy text-primary-light-grey',
+        'bg-primary-navy text-primary-light-grey text-lg',
       )}
     >
       {navRoutes.map((navLink) => (

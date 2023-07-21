@@ -4,7 +4,9 @@ import { aboutMockData } from '@/utils/aboutMockData.ts';
 import MainArticle from '@/components/MainArticle.tsx';
 
 const AboutPage = () => {
-  const { headingMessage, greetingMessage, skills, graduation } = aboutMockData;
+  const { headingMessage, greetingMessage, skills, graduation, conclusion } =
+    aboutMockData;
+
   return (
     <MotionContainer>
       <div>{greetingMessage}</div>
@@ -16,6 +18,7 @@ const AboutPage = () => {
       />
       <MainArticle>{graduation}</MainArticle>
       <MainArticle>{skills}</MainArticle>
+      <MainArticle>{conclusion}</MainArticle>
     </MotionContainer>
   );
 };

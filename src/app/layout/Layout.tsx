@@ -13,15 +13,15 @@ const Layout = ({ children }: Layout_T) => {
     <div className="font-montserrat text-xl">
       <Header />
       <LinkIconsGroup />
-      <Divider />
+      <Divider paddingValue={10} />
       <div
         className={clsx(
           'min-h-[calc(100vh-14.55rem)]',
-          'bg-primary-navy text-primary-light-grey',
+          'bg-primary-navy text-primary-light-grey text-lg',
           'flex justify-center',
         )}
       >
-        <div className="w-full flex md:w-[60%] lg:w-[45%] mb-10">
+        <div className="w-full flex md:w-[60%] lg:w-[45%] mb-10 px-6 md:p-0">
           {children}
         </div>
       </div>
