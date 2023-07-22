@@ -21,9 +21,7 @@ const Layout = ({ children }: Layout_T) => {
           'flex justify-center',
         )}
       >
-        <div className="w-full flex md:w-[60%] lg:w-[45%] mb-10 px-6 md:p-0">
-          {children}
-        </div>
+        <div className="px-8 max-w-3xl mx-auto mb-10">{children}</div>
       </div>
     </div>
   );

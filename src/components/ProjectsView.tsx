@@ -2,10 +2,12 @@ import { clsx } from 'clsx';
 import { motion } from 'framer-motion';
 import { IProjectsView } from '@/types/projects.ts';
 import { BsGithub, BsLink45Deg } from 'react-icons/bs';
+import LinkIcon from '@/components/LinkIcon.tsx';
 
 const ProjectsView = ({ projectsItem }: IProjectsView) => {
   const { logoImg, title, detailsInfo, repositoryLink, deployLink, stack } =
     projectsItem;
+  const stylingProps: string = 'h-6 w-6 rounded';
 
   return (
     <motion.div
@@ -14,54 +16,35 @@ const ProjectsView = ({ projectsItem }: IProjectsView) => {
       transition={{ delay: 0.2 }}
       viewport={{ once: true }}
       className={clsx(
-        'flex flex-row',
+        'flex flex-col',
         'border-[1px] rounded-md border-highlight',
         'text-base',
+        'md:flex-row',
       )}
     >
-      <img src={logoImg} alt="project logo" className="rounded-l-md w-64" />
+      <img src={logoImg} alt="project logo" className="rounded-l-md md:w-64" />
       <div className="p-2">
         <div className="flex flex-row justify-between">
           <div className="text-xl font-bold">{title}</div>
           <div className="flex flex-row gap-2">
-            <motion.a
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ duration: 0.3 }}
-              href={repositoryLink}
-              target="_blank"
-              className={clsx(
-                'flex items-center justify-center',
-                'w-6 h-6 rounded',
-                'bg-primary-light-grey text-highlight',
-                'hover:bg-primary-light-navy hover:text-primary-light-grey',
-              )}
-            >
+            <LinkIcon link={repositoryLink} stylingProps={stylingProps}>
               <BsGithub size={18} />
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ duration: 0.3 }}
-              href={deployLink}
-              target="_blank"
-              className={clsx(
-                'flex items-center justify-center',
-                'w-6 h-6 rounded',
-                'bg-primary-light-grey text-highlight',
-                'hover:bg-primary-light-navy hover:text-primary-light-grey',
-              )}
-            >
+            </LinkIcon>
+            <LinkIcon link={deployLink} stylingProps={stylingProps}>
               <BsLink45Deg size={18} />
-            </motion.a>
+            </LinkIcon>
           </div>
         </div>
         <div className="my-2">{detailsInfo}</div>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-3">
           {stack.map((projectStack, index) => (
             <div
               key={index}
-              className={clsx('bg-primary-light-navy', 'rounded-lg p-1')}
+              className={clsx(
+                'bg-primary-light-navy',
+                'rounded-lg p-1',
+                'text-sm',
+              )}
             >
               {projectStack}
             </div>

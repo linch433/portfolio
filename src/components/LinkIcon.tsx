@@ -5,15 +5,16 @@ import { motion } from 'framer-motion';
 type LinkIcon_T = {
   children: React.ReactNode;
   link: string;
+  stylingProps: string;
 };
 
-const LinkIcon = ({ children, link }: LinkIcon_T) => {
+const LinkIcon = ({ children, link, stylingProps }: LinkIcon_T) => {
   return (
     <motion.a
       className={clsx(
         'flex items-center justify-center',
-        'h-10 w-10',
-        'bg-primary-light-grey text-highlight rounded-xl',
+        stylingProps,
+        'bg-primary-light-grey text-highlight',
         'hover:bg-primary-light-navy hover:text-primary-light-grey',
       )}
       whileHover={{ scale: 1.1 }}
