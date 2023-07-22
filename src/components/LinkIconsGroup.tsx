@@ -1,11 +1,17 @@
 import LinkIcon from '@/components/LinkIcon.tsx';
-import { BsGithub, BsLinkedin, BsTelegram } from 'react-icons/bs';
+import { BsGithub, BsInstagram, BsLinkedin, BsTelegram } from 'react-icons/bs';
 import { AiFillContainer, AiFillMail } from 'react-icons/ai';
 import { links } from '@/utils/mockLinks.ts';
 
 const LinkIconsGroup = () => {
-  const { githubLink, linkedinLink, telegramLink, mailToLink, resumeLink } =
-    links;
+  const {
+    githubLink,
+    linkedinLink,
+    telegramLink,
+    instagramLink,
+    mailToLink,
+    resumeLink,
+  } = links;
   return (
     <div className="bg-primary-navy flex flex-row gap-2 justify-center pt-6">
       <LinkIcon link={githubLink}>
@@ -16,6 +22,9 @@ const LinkIconsGroup = () => {
       </LinkIcon>
       <LinkIcon link={telegramLink}>
         <BsTelegram size={20} />
+      </LinkIcon>
+      <LinkIcon link={instagramLink}>
+        <BsInstagram size={20} />
       </LinkIcon>
       <LinkIcon link={mailToLink}>
         <AiFillMail size={20} />
