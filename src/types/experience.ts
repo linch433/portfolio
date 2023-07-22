@@ -14,3 +14,7 @@ export type MockExperienceData_T = {
   challenges: string;
   experience: WorksExperience_T[];
 };
+
+export interface IExperienceView {
+  experienceItem: WorksExperience_T;
+}
