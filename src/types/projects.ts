@@ -3,7 +3,7 @@ type ProjectsInfo_T = {
   title: string;
   detailsInfo: string;
   repositoryLink: string;
-  deployLink: string;
+  deployLink?: string;
   stack: string[];
 };
 

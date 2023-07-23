@@ -15,7 +15,7 @@ const LinkIcon = ({ children, link, stylingProps }: LinkIcon_T) => {
         'flex items-center justify-center',
         stylingProps,
         'bg-primary-light-grey text-highlight',
-        'hover:bg-primary-light-navy hover:text-primary-light-grey',
+        'hover:bg-primary-light-navy hover:text-primary-icon-light',
       )}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}

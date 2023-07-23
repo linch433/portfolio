@@ -34,13 +34,21 @@ const ExperienceView = ({ experienceItem }: IExperienceView) => {
         </div>
       </div>
       <div className="bg-highlight h-[1px] rounded-full my-4" />
-      <div className="text-justify mb-4">{experience}</div>
+      <div className="text-justify mb-4">
+        <ul>
+          {experience.map((experienceItem, index) => (
+            <li key={index} className="list-disc list-inside">
+              {experienceItem}
+            </li>
+          ))}
+        </ul>
+      </div>
       <div className="flex flex-wrap gap-3">
         {stack.map((stackItem, stackIndex) => (
           <div
             key={stackIndex}
             className={clsx(
-              'bg-primary-light-navy',
+              'bg-primary-light-navy text-primary-icon-light',
               'rounded-lg p-1',
               'text-sm',
             )}

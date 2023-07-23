@@ -6,8 +6,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Always change if main color on tailwind.config changed */
-body {
-    background-color: #18122B;
+@layer base {
+    :root {
+        --color-primary-navy: 24 18 43;
+        --color-primary-light-navy: 57 48 83;
+        --color-secondary-navy: 68 60 104;
+        --color-secondary-light-navy: 99 89 133;
+        --color-primary-light-grey: 212 212 212;
+        --color-secondary-light-grey: 188 188 188;
+        --color-primary-icon-light: 240 240 240;
+        --color-highlight: 119 119 119;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --color-primary-navy: 24 18 43;
+            --color-primary-light-navy: 57 48 83;
+            --color-secondary-navy: 68 60 104;
+            --color-secondary-light-navy: 99 89 133;
+            --color-primary-light-grey: 212 212 212;
+            --color-secondary-light-grey: 188 188 188;
+            --color-primary-icon-light: 240 240 240;
+            --color-highlight: 119 119 119;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --color-primary-navy: 218 218 218;
+            --color-primary-light-navy: 68 60 104;
+            --color-secondary-navy: 68 60 104;
+            --color-secondary-light-navy: 10 10 10;
+            --color-primary-light-grey: 5 5 5;
+            --color-secondary-light-grey: 73 73 73;
+            --color-primary-icon-light: 240 240 240;
+            --color-highlight: 119 119 119;
+        }
+    }
+    
+    :root[data-theme="dark"] {
+        --color-primary-navy: 24 18 43;
+        --color-primary-light-navy: 57 48 83;
+        --color-secondary-navy: 68 60 104;
+        --color-secondary-light-navy: 99 89 133;
+        --color-primary-light-grey: 212 212 212;
+        --color-secondary-light-grey: 188 188 188;
+        --color-primary-icon-light: 240 240 240;
+        --color-highlight: 119 119 119;
+    }
+
+    :root[data-theme="light"] {
+        --color-primary-navy: 218 218 218;
+        --color-primary-light-navy: 57 48 83;
+        --color-secondary-navy: 68 60 104;
+        --color-secondary-light-navy: 10 10 10;
+        --color-primary-light-grey: 5 5 5;
+        --color-secondary-light-grey: 73 73 73;
+        --color-primary-icon-light: 240 240 240;
+        --color-highlight: 119 119 119;
+    }
 }
 

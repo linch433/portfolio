@@ -44,7 +44,6 @@ export const projectsMockData: MockProjectsData_T = {
       detailsInfo:
         "User-Blog is a simple web application that allows users read blog posts, view other users' profiles, write new blog posts, leave comments on posts, and read comments. The app is designed to provide a platform for users to share their thoughts through blog posts and engage with other users' content through comments.",
       repositoryLink: 'https://github.com/linch433/user-blog',
-      deployLink: 'https://user-blog-beta.vercel.app/',
       stack: ['React', 'Vite', 'TailwindCSS', 'RTK', 'RTK Query'],
     },
   ],

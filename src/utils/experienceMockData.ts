@@ -15,9 +15,12 @@ export const experienceMockData: MockExperienceData_T = {
       title: 'Junior FrontEnd Developer',
       workStart: 'Jan. 2023',
       workEnd: 'Now',
-      experience:
-        'Currently, my role in the team is developing and maintaining various features and modules of the application, also resolve bugs. On the other hand, I collaborate with other team members, including designers and backend developers, to ensure the smooth functioning of the application.\n' +
-        'In addition to my commercial development experience, I have worked with iOS and iPadOS using Swift, UIKit, MVVM, MVC, Combine, and CoreData.',
+      experience: [
+        'Developed and maintained various features and modules of the application, also resolved bugs',
+        'Collaborate with other team members, including designers and backend developers, to ensure the smooth functioning of the application',
+        'Migrated a multi-page user experience into new modern CMS app, improving global performance',
+        'Introduced enhancements to improve the responsiveness and functionality of websites',
+      ],
       stack: [
         'React',
         'React Native',
@@ -33,14 +36,19 @@ export const experienceMockData: MockExperienceData_T = {
       title: 'Junior iOS Developer',
       workStart: 'Jun. 2022',
       workEnd: 'Now',
-      experience:
-        'Currently, my role in the team is developing and maintaining various features and modules of the application, also resolve bugs. On the other hand, I collaborate with other team members, including designers and backend developers, to ensure the smooth functioning of the application.\n' +
-        'In addition to my commercial development experience, I have worked with iOS and iPadOS using Swift, UIKit, MVVM, MVC, Combine, and CoreData.',
+      experience: [
+        'Worked closely with PM and designers to define a rich iOS experience for the user',
+        'Collaborate with the architect in improving the native iOS/iPadOS and tvOS codebase',
+        'Explored new technologies and shared findings with the team',
+        'Work with other developers to develop new features consistent with product roadmap',
+        'Eager to get nerdy about memory management, UI layout/rendering and UI/network performance',
+      ],
       stack: [
         'Swift',
         'UIKit',
         'Storyboard',
         'MVVM',
+        'MVC',
         'Combine',
         'CoreData',
         'VIPER',

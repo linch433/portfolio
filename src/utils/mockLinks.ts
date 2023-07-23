@@ -1,3 +1,5 @@
+import resumePdfFile from '@/assets/resumeTest.pdf';
+
 type MockLinks_T = {
   githubLink: string;
   linkedinLink: string;
@@ -13,5 +15,5 @@ export const links: MockLinks_T = {
   telegramLink: 'https://t.me/linch433',
   instagramLink: 'https://www.instagram.com/kopynets.v/',
   mailToLink: 'mailto:linch433@gmail.com',
-  resumeLink: 'https://www.clickdimensions.com/links/TestPDFfile.pdf',
+  resumeLink: resumePdfFile,
 };

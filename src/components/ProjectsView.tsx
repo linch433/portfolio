@@ -30,9 +30,11 @@ const ProjectsView = ({ projectsItem }: IProjectsView) => {
             <LinkIcon link={repositoryLink} stylingProps={stylingProps}>
               <BsGithub size={18} />
             </LinkIcon>
-            <LinkIcon link={deployLink} stylingProps={stylingProps}>
-              <BsLink45Deg size={18} />
-            </LinkIcon>
+            {deployLink && (
+              <LinkIcon link={deployLink} stylingProps={stylingProps}>
+                <BsLink45Deg size={18} />
+              </LinkIcon>
+            )}
           </div>
         </div>
         <div className="my-2">{detailsInfo}</div>
@@ -41,7 +43,7 @@ const ProjectsView = ({ projectsItem }: IProjectsView) => {
             <div
               key={index}
               className={clsx(
-                'bg-primary-light-navy',
+                'bg-primary-light-navy text-primary-icon-light',
                 'rounded-lg p-1',
                 'text-sm',
               )}

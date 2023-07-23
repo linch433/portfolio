@@ -3,6 +3,7 @@ import React from 'react';
 import Divider from '@/components/Divider.tsx';
 import LinkIconsGroup from '@/components/LinkIconsGroup.tsx';
 import { clsx } from 'clsx';
+import DarkModeSwitchContainer from '@/components/DarkModeSwitchContainer.tsx';
 
 type Layout_T = {
   children: React.ReactNode;
@@ -13,6 +14,7 @@ const Layout = ({ children }: Layout_T) => {
     <div className="font-montserrat text-xl relative">
       <Header />
       <LinkIconsGroup />
+      <DarkModeSwitchContainer />
       <Divider />
       <div
         className={clsx(

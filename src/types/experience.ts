@@ -3,7 +3,7 @@ export type WorksExperience_T = {
   title: string;
   workStart: string;
   workEnd: string;
-  experience: string;
+  experience: string[];
   stack: string[];
 };
 
