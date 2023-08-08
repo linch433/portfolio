@@ -12,7 +12,7 @@ export const experienceMockData: MockExperienceData_T = {
   experience: [
     {
       job: 'NerdPeople',
-      title: 'Junior FrontEnd Developer',
+      title: 'Junior Web Developer',
       workStart: 'Jan. 2023',
       workEnd: 'Now',
       experience: [
@@ -35,7 +35,7 @@ export const experienceMockData: MockExperienceData_T = {
       job: 'NerdPeople',
       title: 'Junior iOS Developer',
       workStart: 'Jun. 2022',
-      workEnd: 'Now',
+      workEnd: 'Oct. 2022',
       experience: [
         'Worked closely with PM and designers to define a rich iOS experience for the user',
         'Collaborate with the architect in improving the native iOS/iPadOS and tvOS codebase',
