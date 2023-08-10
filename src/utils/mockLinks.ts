@@ -1,4 +1,4 @@
-import resumePdfFile from '@/assets/resume.pdf';
+import resumePdfFile from '@/assets/Frontend_Kopynets_Volodymyr.pdf';
 
 type MockLinks_T = {
   githubLink: string;

@@ -11,7 +11,7 @@ export const experienceMockData: MockExperienceData_T = {
     'Through perseverance and a drive for excellence, I have embraced new challenges, inspiring me to evolve and innovate in the ever-evolving landscape of software development.',
   experience: [
     {
-      job: 'NerdPeople',
+      job: 'TMA',
       title: 'Junior Web Developer',
       workStart: 'Jan. 2023',
       workEnd: 'Now',
